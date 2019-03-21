@@ -70,7 +70,7 @@ public class StompListenerAnnotationBeanPostProcessor implements MergedBeanDefin
             if (annotatedMethods.isEmpty()) {
                 this.nonAnnotatedClasses.add(targetClass);
                 if (LOGGER.isTraceEnabled()) {
-                    LOGGER.trace("No @JmsListener annotations found on bean type: " + targetClass);
+                    LOGGER.trace("No @StompListener annotations found on bean type: " + targetClass);
                 }
             }
             else {
@@ -78,7 +78,7 @@ public class StompListenerAnnotationBeanPostProcessor implements MergedBeanDefin
                 annotatedMethods.forEach((method, listeners) ->
                         listeners.forEach(listener -> processStompListener(listener, method, bean)));
                 if (LOGGER.isDebugEnabled()) {
-                    LOGGER.debug(annotatedMethods.size() + " @JmsListener methods processed on bean '" + beanName +
+                    LOGGER.debug(annotatedMethods.size() + " @StompListener methods processed on bean '" + beanName +
                             "': " + annotatedMethods);
                 }
             }
