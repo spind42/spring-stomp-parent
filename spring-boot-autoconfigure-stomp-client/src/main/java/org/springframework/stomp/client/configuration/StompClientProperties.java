@@ -1,4 +1,4 @@
-package org.springframework.boot.autoconfigure.stomp.client;
+package org.springframework.stomp.client.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

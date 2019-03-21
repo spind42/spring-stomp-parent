@@ -1,2 +1,2 @@
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-#org.springframework.boot.autoconfigure.jms.tipco.TipcoESBAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.springframework.boot.autoconfigure.stomp.client.StompClientAutoConfiguration

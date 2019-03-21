@@ -1,4 +1,4 @@
-package org.springframework.boot.autoconfigure.stomp.client.netty;
+package org.springframework.stomp.client.netty;
 
 import asia.stampy.client.listener.validate.ClientMessageValidationListener;
 import asia.stampy.client.netty.ClientNettyChannelHandler;
@@ -6,7 +6,7 @@ import asia.stampy.client.netty.ClientNettyMessageGateway;
 import asia.stampy.client.netty.connected.NettyConnectedMessageListener;
 import asia.stampy.client.netty.disconnect.NettyDisconnectListenerAndInterceptor;
 import asia.stampy.common.heartbeat.HeartbeatContainer;
-import org.springframework.boot.autoconfigure.stomp.client.StompClientProperties;
+import org.springframework.stomp.client.configuration.StompClientProperties;
 
 public class ClientNettyMessageGatewayFactory {
 
